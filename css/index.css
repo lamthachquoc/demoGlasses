@@ -1,0 +1,106 @@
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* MAIN CSS */
+
+.vglasses__left {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 12px;
+}
+
+.vglasses__left .col-4 {
+    align-self: center;
+}
+
+.vglasses__items {
+    cursor: pointer;
+}
+
+.vglasses__right {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vglasses__model {
+    background-image: url("../img/model.jpg");
+    background-position: center top;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
+.vglasses__model img {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 238px;
+    height: 85px;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+.vglasses__card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.vglasses__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+}
+
+#glasses {
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .vglasses__right {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .glassesShow img {
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .vglasses__right {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+}
